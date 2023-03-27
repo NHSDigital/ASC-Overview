@@ -1,0 +1,11 @@
+{
+    "TEST_STRING": "TEST_STRING",
+    "TEST_INT": "TEST_INT",
+    "TEST_DICT": {
+        "TEST_DICT_1": "1"
+    },
+    "TEST_LIST": ["1", "2", "3"],
+    "TEST_SUBOBJECT": {
+        "STRING_1": "some_string"
+    }
+}

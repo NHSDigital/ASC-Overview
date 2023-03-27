@@ -1,0 +1,526 @@
+{
+  "PUBLICATION_YEAR": "2020-21",
+  "PREVIOUS_PUBLICATION_YEAR": "2019-20",
+  "PUBLICATION_YEAR_TO_COMPARE_GROWTH": "2015-16",
+  "ONS_POPULATION_YEAR": "2020",
+  "WORKFORCE_YEAR": 2021,
+  "LOAD_CARERS_DATA": false,
+  "PUBLICATIONS": {
+    "ASCFR": {
+      "NAME": "ASCFR",
+      "FILENAME": "ASCFR_REF_DATA_TABLES.xlsx",
+      "URL": "https://files.digital.nhs.uk/BE/D02FCC/ASCFR%20and%20SALT%20Reference%20Tables%202020-21.xlsx"
+    },
+    "ASCOF": {
+      "NAME": "ASCOF",
+      "FILENAME": "ASCOF_DISAGGREGATED_OUTCOME_MEASURES.xlsx",
+      "URL": "https://files.digital.nhs.uk/FA/4E9A9F/meas-from-asc-of-eng-2021-disag-anx.xlsx"
+    },
+    "ASCS": {
+      "NAME": "ASCS",
+      "FILENAME": "ASCS_ANNEX_TABLES.xlsx",
+      "URL": "https://files.digital.nhs.uk/CC/E0A491/pss-ascs-eng-2021-annex-tables_v2.xlsx"
+    },
+    "DOLS_APPLICATIONS": {
+      "NAME": "DOLS_APPLICATIONS",
+      "FILENAME": "DOLS_APPLICATIONS.xlsx",
+      "URL": "https://files.digital.nhs.uk/17/CA0E37/dols-eng-applications-2020-21.xlsx"
+    },
+    "SAFEGUARDING": {
+      "NAME": "SAFEGUARDING",
+      "FILENAME": "SAFEGUARDING_DATA_TABLES.xlsx",
+      "URL": "https://files.digital.nhs.uk/8F/5094EF/sac-eng-2020-21-data-tables.xlsx"
+    },
+    "WORKFORCE": {
+      "NAME": "WORKFORCE",
+      "FILENAME": "WORKFORCE.xlsx",
+      "URL": "https://www.skillsforcare.org.uk/Adult-Social-Care-Workforce-Data/Workforce-intelligence/documents/The-workforce-employed-by-adult-social-services-departments-Reference-Tables.xlsx"
+    },
+    "ASC_OVERVIEW": {
+      "NAME": "ASC_OVERVIEW",
+      "FILENAME": "ASC_OVERVIEW_DATA_TABLES.xlsx",
+      "URL": "https://files.digital.nhs.uk/75/518E82/Adult%20Social%20Care%20Statistics%20in%20England_%20An%20Overview%20-%20Data%20Tables.xlsx"
+    }
+  },
+  "PATH_TO_OUTPUTS": "./outputs/",
+  "ASC_OVERVIEW_TEMPLATE_FILE_NAME": "ASC_OVERVIEW_DATA_TABLES_TEMPLATE.xlsx",
+  "ASC_OVERVIEW_EXAMPLE_FILE_NAME": "EXAMPLE_ASC_OVERVIEW_DATA_TABLES.xlsx",
+  "NEW_REQUESTS_TABLE": {
+    "OVERVIEW": {
+      "SHEET_NAME": "Table 1",
+      "WORKBOOK_RANGE": {
+        "CELL_END": "F20",
+        "CELL_START": "A8"
+      }
+    },
+    "CELL_TO_WRITE_TO": "G8",
+    "ROW_NAMES": {
+      "ASCFR_NEW_REQUESTS_18_64_NAME": "Number of new requests for support: Age 18-64",
+      "ASCFR_NEW_REQUESTS_65_PLUS_NAME": "Number of new requests for support: Age 65 and over",
+      "ASCFR_GROWTH_18_64_SINCE_2015_16_NAME": "% Growth since 2015-16: Age 18-64",
+      "ASCFR_GROWTH_65_PLUS_SINCE_2015_16_NAME": "% Growth since 2015-16: Age 65 and over",
+      "POPULATION_18_64": "Population: Age 18-64",
+      "POPULATION_65_PLUS": "Population: Age 65 and over",
+      "NEW_REQUESTS_PER_POPULATION_18_64": "New requests for support per 100,000 population: Age 18-64",
+      "NEW_REQUESTS_PER_POPULATION_65_PLUS": "New requests for support per 100,000 population: Age 65 and over",
+      "SAFEGUARDING_CONCERNS_RAISED_NAME": "Number of safeguarding concerns raised",
+      "DOLS_APPLICATIONS_RECEIVED_NAME": "Number of Deprivation of Liberty Safeguards applications received",
+      "SAFEGUARDING_YEAR_ON_YEAR_CONCERNS_RAISED_NAME": "Year-on-year % change: safeguarding concerns raised",
+      "DOLS_YEAR_ON_YEAR_APPLICATIONS_RECEIVED_NAME": "Year-on-year % change: DoLS applications received"
+    },
+    "ASCFR_NEW_INDEX": [
+      "New requests for support per 100,000 population: Age 18-64",
+      "Number of new requests for support: Age 18-64",
+      "Population: Age 18-64",
+      "New requests for support per 100,000 population: Age 65 and over",
+      "Number of new requests for support: Age 65 and over",
+      "Population: Age 65 and over"
+    ],
+    "DOLS_APPLICATIONS_RECEIVED_ROW_NAME": "Total number of applications received",
+    "DOLS_APPLICATIONS_RECEIVED_COLUMN_NAME": "2020-212",
+    "SAFEGUARDING_CONCERNS_RAISED_ROW_NAME": "England",
+    "SAFEGUARDING_CONCERNS_RAISED_COLUMN_NAME": "Safeguarding Concerns"
+  },
+  "SHORT_TERM_CARE_TABLE": {
+    "OVERVIEW_SHEET_NAME": "Table 2",
+    "COMPLETED_EPISODES_ST_MAX_ROWS": [
+      "All ages",
+      "18-64",
+      "65 and over"
+    ],
+    "COMPLETED_EPISODES_ST_MAX_COLUMNS_NEW_CLIENTS_TO_DROP": [
+      null,
+      "Region code ",
+      "Region name"
+    ],
+    "COMPLETED_EPISODES_ST_MAX_COLUMNS_EXISTING_CLIENTS_TO_DROP": [
+      "Region code",
+      "Region name"
+    ],
+    "COMPLETED_EPISODES_ST_MAX_COLUMN_NAMES": {
+      "EARLY_CESSATION_OF_SERVICE_NHS_FUNDED_COLUMN_NAME": "Early Cessation of Service (not leading to long term support) - 100% NHS funded care/end of life/deceased",
+      "EARLY_CESSATION_OF_SERVICE_COLUMN_NAME": "Early Cessation of Service (not leading to long term support)",
+      "EARLY_CESSATION_OF_SERVICE_LONG_TERM_SUPPORT": "Early Cessation of Service (leading to long term support)",
+      "LONG_TERM_SUPPORT": "Long Term Support",
+      "ONGOING_LOW_LEVEL_SUPPORT": "Ongoing Low Level Support",
+      "SHORT_TERM_SUPPORT": "Short Term Support",
+      "NO_SERVICES_SELF_FUNDING": "No Services Provided Needs identified but self funding",
+      "NO_SERVICES_DECLINED": "No Services Provided Needs identified but support declined",
+      "NO_SERVICES_UNVERSAL_SIGNPOSTED": "No Services Provided Universal Services/ signposted to other services",
+      "NO_SERVICES_NO_IDENTIFIED": "No Services Provided No identified needs"
+    },
+    "CELL_TO_WRITE_TO": "G4",
+    "ROW_NAMES": {
+      "TOTAL_COMPLETED_EPISODES_18_64": "Number of completed episodes of ST-Max for new and existing clients: Age 18-64",
+      "TOTAL_COMPLETED_EPISODES_65_PLUS": "Number of completed episodes of ST-Max for new and existing clients: Age 65 and over",
+      "WHAT_HAPPENED_NEXT": "What happened next for new clients (all ages):",
+      "EARLY_CESSATION_OF_SERVICE": "Early Cessation of Service (not leading to long term support)",
+      "LONG_TERM_SUPPORT": "Long Term Support",
+      "ONGOING_LOW_LEVEL_SUPPORT": "Ongoing Low Level Support",
+      "SHORT_TERM_SUPPORT": "Short Term Support",
+      "NO_SERVICES_DECLINED": "No Services Provided: Needs identified but self funding or support declined",
+      "NO_SERVICES_UNVERSAL_SIGNPOSTED": "No Services Provided: Universal Services/ signposted to other services",
+      "NO_SERVICES_NO_IDENTIFIED": "No Services Provided: No identified needs",
+      "PERCENT_EARLY_CESSATION": "% Early Cessation of Service (not leading to long term support)",
+      "PERCENT_LONG_TERM_SUPPORT": "% Long Term Support",
+      "PERCENT_ONGOING_LOW_LEVEL_SUPPORT": "% Ongoing Low Level Support",
+      "PERCENT_SHORT_TERM_SUPPORT": "% Short Term Support",
+      "PERCENT_NO_SERVICES_DECLINED": "% No Services Provided: Needs identified but self funding or support declined",
+      "PERCENT_NO_SERVICES_UNVERSAL_SIGNPOSTED": "% No Services Provided: Universal Services/ signposted to other services",
+      "PERCENT_NO_SERVICES_NO_IDENTIFIED": "% No Services Provided: No identified needs"
+    }
+  },
+  "LONG_TERM_CARE_TABLE": {
+    "OVERVIEW_SHEET_NAME": "Table 3",
+    "CELL_TO_WRITE_TO": "G5",
+    "PRIMARY_SUPPORT_REASON_ROW_NAMES": {
+      "PHYSICAL_SUPP_ACCESS_AND_MOBILITY": "Physical Support: Access and Mobility Only",
+      "PHYSICAL_SUPP_PERSONAL_CARE": "Physical Support: Personal Care Support",
+      "SENSORY_SUPP_VISUAL": "Sensory Support: Support for Visual Impairment",
+      "SENSORY_SUPP_HEARING": "Sensory Support: Support for Hearing Impairment",
+      "SENSORY_SUPP_DUAL": "Sensory Support: Support for Dual Impairment",
+      "SUPP_WITH_MEMORY_AND_COGNITION": "Support with Memory and Cognition",
+      "LEARNING_DISABILITY_SUPP": "Learning Disability Support",
+      "MENTAL_HEALTH_SUPP": "Mental Health Support",
+      "SOCIAL_SUPP_SUBSTANCE_MISUSE": "Social Support: Substance Misuse Support",
+      "SOCIAL_SUPP_ASYLUM": "Social Support: Asylum Seeker Support",
+      "SOCIAL_SUPP_SOCIAL_ISOLATION": "Social Support: Support for Social Isolation/Other"
+    },
+    "ROW_NAMES": {
+      "LONG_TERM_SUPPORT_18_64": "Number receiving long-term support during the year: Age 18-64",
+      "LONG_TERM_SUPPORT_65_PLUS": "Number receiving long-term support during the year: Age 65 and over",
+      "POPULATION_18_64": "Population: Age 18-64",
+      "POPULATION_65_PLUS": "Population: Age 65 and over",
+      "LONG_TERM_SUPPORT_PERCENT_18_64": "Long-term support % per population: Age 18-64",
+      "LONG_TERM_SUPPORT_PERCENT_65_PLUS": "Long-term support % per population: Age 65 and over",
+      "NURSING_OR_RESIDENTIAL_18_64": "Number receiving nursing or residential care: Age 18-64",
+      "COMMUNITY_18_64": "Number receiving community care: Age 18-64",
+      "NURSING_OR_RESIDENTIAL_65_PLUS": "Number receiving nursing or residential care: Age 65 and over",
+      "COMMUNITY_65_PLUS": "Number receiving community care: Age 65 and over",
+      "PHYSICAL_SUPPORT_AS_PRIMARY_18_64": "Number receiving physical support as primary support reason: Age 18-64",
+      "OTHER_SUPPORT_AS_PRIMARY_18_64": "Number receiving other primary support reason: Age 18-64",
+      "PHYSICAL_SUPPORT_AS_PRIMARY_65_PLUS": "Number receiving physical support as primary support reason: Age 65 and over",
+      "OTHER_SUPPORT_AS_PRIMARY_65_PLUS": "Number receiving other primary support reason: Age 65 and over"
+    }
+  },
+  "LA_EXPENDITURE_TABLE": {
+    "OVERVIEW_SHEET_NAME": "Table 5",
+    "CELL_TO_WRITE_TO": "Q4",
+    "ROW_NAMES": {
+      "GROSS_CURRENT_EXPENDITURE": "Gross current expenditure: real terms, 2020-21 prices (£bn)",
+      "ADULT_POPULATION": "Adult population",
+      "GROSS_CURRENT_EXPENDITURE_PER_ADULT": "Gross current expenditure per adult citizen: real terms, 2020-21 prices (£)",
+      "HOW_MONEY_SPENT": "How the money is spent:",
+      "LA_OWN_PROVISION": "Local authority own provision (£bn)",
+      "PROVISION_BY_OTHERS": "Provision by others (£bn)",
+      "GRANTS_TO_VOLUNTARY_ORGANISATIONS": "Grants to voluntary organisations (£bn)",
+      "PERCENT_LA_OWN_PROVISION": "% spend: local authority own provision",
+      "PERCENT_PROVISION_BY_OTHERS": "% spend: provision by others",
+      "PERCENT_GRANTS_TO_VOLUNTARY_ORGANISATIONS": "% spend: grants to voluntary organisations"
+    }
+  },
+  "WORKFORCE_TABLE": {
+    "OVERVIEW_SHEET_NAME": "Table 6",
+    "CELL_TO_WRITE_TO": "G4",
+    "ROW_NAMES": {
+      "JOBS": "Number of adult social services jobs",
+      "VACANCIES": "Number of adult social services vacancies",
+      "NEW_STARTERS": "Number of new starters",
+      "LEAVERS": "Number of leavers",
+      "TYPE_OF_ROLE": "Type of role:",
+      "DIRECT_CARE": "Direct care",
+      "MANAGER_SUPERVISOR": "Manager/supervisor",
+      "PROFESSIONAL": "Professional",
+      "OTHER": "Other",
+      "PERCENT_DIRECT_CARE": "% Direct care",
+      "PERCENT_MANAGER_SUPERVISOR": "% Manager/supervisor",
+      "PERCENT_PROFESSIONAL": "% Professional",
+      "PERCENT_OTHER": "% Other"
+    }
+  },
+  "SOCIAL_CARE_EXPERIENCE_TABLE": {
+    "OVERVIEW_SHEET_NAME": "Table 7",
+    "CELL_TO_WRITE_TO": "H6",
+    "ROW_NAMES": {
+      "SERVICE_USER_SATISFACTION_18_64": "Overall % satisfaction of people who use services with their care and support: Age 18-64",
+      "SERVICE_USER_SATISFACTION_65_AND_OVER": "Overall % satisfaction of people who use services with their care and support: Age 65 and over",
+      "CARER_SATISFACTION_18_64": "Overall % satisfaction of carers with social services: Age 18-64",
+      "CARER_SATISFACTION_65_AND_OVER": "Overall % satisfaction of carers with social services: Age 65 and over",
+      "SERVICE_USER_FEELINGS": "Service user feelings about themselves: ",
+      "FEEL_BETTER_ABOUT_SELF": "The way I'm helped and treated makes me think and feel better about myself",
+      "DOES_NOT_AFFECT_SELF": "The way I'm helped and treated does not affect the way I think or feel about myself",
+      "SOMETIMES_UNDERMINES_SELF": "The way I'm helped and treated sometimes undermines the way I think and feel about myself",
+      "COMPLETELY_UNDERMINES_SELF": "The way I'm helped and treated completely undermines the way I think and feel about myself",
+      "SERVICE_USERS_CHOICE": "Service users feelings of choice:",
+      "HAVE_ENOUGH_CHOICE": "I do have enough choice over care and support services",
+      "DONT_HAVE_ENOUGH_CHOICE": "I don't have enough choice over care and support services",
+      "DONT_WANT_CHOICE": "I don't want or need choice about care and support services"
+    }
+  },
+  "OUTCOMES_TABLE": {
+    "OVERVIEW_SHEET_NAME": "Table 8",
+    "CELL_TO_WRITE_TO": "H5",
+    "ROW_NAMES": {
+      "SERVICE_USER_QUALITY_OF_LIFE_18_64": "Service user social care-related quality of life score (out of 24): Age 18-64",
+      "SERVICE_USER_QUALITY_OF_LIFE_65_AND_OVER": "Service user social care-related quality of life score (out of 24): Age 65 and over",
+      "CARER_QUALITY_OF_LIFE_18_64": "Carer-reported quality of life score (out of 12): Age 18-64",
+      "CARER_QUALITY_OF_LIFE_65_AND_OVER": "Carer-reported quality of life score (out of 12): Age 65 and over",
+      "DELAYED_TRANSFERS": "Delayed transfers of care from hospital per 100,000 adult population",
+      "DELAYED_TRANSFERS_AND_ATTRIBUTABLE": "Delayed transfers of care from hospital and attributable to adult social care, per 100,000 adult population",
+      "FULLY_ACHIEVED": "Safeguarding Enquiries where the adult at risk indicated that the desired outcomes were fully achieved",
+      "PARTLY_ACHIEVED": "Safeguarding Enquiries where the adult at risk indicated that the desired outcomes were partly achieved",
+      "NOT_ACHIEVED": "Safeguarding Enquiries where the adult at risk indicated that the desired outcomes were not achieved",
+      "PERCENT_FULLY_ACHIEVED": "% Safeguarding Enquiries where the adult at risk indicated that the desired outcomes were fully achieved",
+      "PERCENT_PARTLY_ACHIEVED": "% Safeguarding Enquiries where the adult at risk indicated that the desired outcomes were partly achieved",
+      "PERCENT_FULLY_OR_PARTLY_ACHIEVED": "% Safeguarding Enquiries where the adult at risk indicated that the desired outcomes were fully or partly achieved"
+    }
+  },
+  "MORE_OUTCOMES_TABLE": {
+    "OVERVIEW_SHEET_NAME": "Table 9",
+    "CELL_TO_WRITE_TO": "H6",
+    "ROW_NAMES": {
+      "SERVICE_USER_SAFETY_18_64": "% of people who use services who feel safe: Age 18-64",
+      "SERVICE_USER_SAFETY_65_AND_OVER": "% of people who use services who feel safe: Age 65 and over",
+      "SERVICE_USER_SOCIAL_CONTACT_18_64": "% of people who use services who reported that they had as much social contact as they would like: Age 18-64",
+      "SERVICE_USER_SOCIAL_CONTACT_65_AND_OVER": "% of people who use services who reported that they had as much social contact as they would like: Age 65 and over",
+      "CARERS_SOCIAL_CONTACT_18_64": "% of carers who reported that they had as much social contact as they would like: Age 18-64",
+      "CARERS_SOCIAL_CONTACT_65_AND_OVER": "% of carers who reported that they had as much social contact as they would like: Age 65 and over"
+    }
+  },
+  "OUTCOMES_BY_LA_TABLE": {
+    "OVERVIEW_SHEET_NAME": "Table 10a",
+    "CELL_TO_WRITE_TO_SOCIAL_CONTACT": "B7",
+    "CELL_TO_WRITE_TO_FEEL_SAFE": "E7"
+  },
+  "ASCS_LOADING_CONFIG": {
+    "SERVICE_USERS_FEELINGS_THEMSELVES": {
+      "SHEET_NAME": "T1a - Answers by Council",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "ED23",
+        "CELL_END": "EH24"
+      }
+    },
+    "SERVICE_USERS_FEELINGS_CHOICE": {
+      "SHEET_NAME": "T1a - Answers by Council",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "BA23",
+        "CELL_END": "BD24"
+      }
+    }
+  },
+  "ASCFR_LOADING_CONFIG": {
+    "LONG_TERM_SUPPORT_SETTING_18_64": {
+      "SHEET_NAME": "T34",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "E8",
+        "CELL_END": "W10"
+      }
+    },
+    "PRIMARY_SUPPORT_REASON_18_64": {
+      "SHEET_NAME": "T35",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "K12",
+        "CELL_END": "L23"
+      }
+    },
+    "PRIMARY_SUPPORT_REASON_65_PLUS": {
+      "SHEET_NAME": "T35",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "K26",
+        "CELL_END": "L37"
+      }
+    },
+    "NEW_CLIENTS": {
+      "SHEET_NAME": "T21",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "A7",
+        "CELL_END": "X23"
+      }
+    },
+    "EXISTING_CLIENTS": {
+      "SHEET_NAME": "T27",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "A7",
+        "CELL_END": "X23"
+      }
+    },
+    "NEW_REQUESTS": {
+      "SHEET_NAME": "T12",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "E8",
+        "CELL_END": "K10"
+      }
+    },
+    "REAL_TERMS": {
+      "SHEET_NAME": "T4",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "A7",
+        "CELL_END": "C24"
+      }
+    },
+    "HOW_MONEY_SPENT": {
+      "SHEET_NAME": "T5",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "E8",
+        "CELL_END": "M10"
+      }
+    }
+  },
+  "ASCOF_LOADING_CONFIG": {
+    "SERVICE_USER_SATISFACTION": {
+      "SHEET_NAME": "3A",
+      "CELL_REF_18_64": "O158",
+      "CELL_REF_65_AND_OVER": "R158"
+    },
+    "CARER_SATISFACTION": {
+      "SHEET_NAME": "3B",
+      "CELL_REF_18_64": "O168",
+      "CELL_REF_65_AND_OVER": "R168"
+    },
+    "SERVICE_USER_QUALITY_OF_LIFE": {
+      "SHEET_NAME": "1A",
+      "CELL_REF_18_64": "O158",
+      "CELL_REF_65_AND_OVER": "R158"
+    },
+    "CARER_QUALITY_OF_LIFE": {
+      "SHEET_NAME": "1D",
+      "CELL_REF_18_64": "N170",
+      "CELL_REF_65_AND_OVER": "Q170"
+    },
+    "FEEL_SAFE_BY_AGE": {
+      "SHEET_NAME": "4A",
+      "CELL_REF_18_64": "O158",
+      "CELL_REF_65_AND_OVER": "R158"
+    },
+    "SERVICE_USER_SOCIAL_CONTACT_BY_AGE": {
+      "SHEET_NAME": "1I(1)",
+      "CELL_REF_18_64": "O158",
+      "CELL_REF_65_AND_OVER": "R158"
+    },
+    "CARER_SOCIAL_CONTACT_BY_AGE": {
+      "SHEET_NAME": "1I(2)",
+      "CELL_REF_18_64": "O168",
+      "CELL_REF_65_AND_OVER": "R168"
+    },
+    "SOCIAL_CONTACT_BY_LA": {
+      "SHEET_NAME": "1I(1)",
+      "RANGE_INDEX": {
+        "CELL_START": "B6",
+        "CELL_END": "B157"
+      },
+      "RANGE_18_64": {
+        "CELL_START": "O6",
+        "CELL_END": "O157"
+      },
+      "RANGE_65_AND_OVER": {
+        "CELL_START": "R6",
+        "CELL_END": "R157"
+      }
+    },
+    "FEEL_SAFE_BY_LA": {
+      "SHEET_NAME": "4A",
+      "RANGE_INDEX": {
+        "CELL_START": "B6",
+        "CELL_END": "B157"
+      },
+      "RANGE_18_64": {
+        "CELL_START": "O6",
+        "CELL_END": "O157"
+      },
+      "RANGE_65_AND_OVER": {
+        "CELL_START": "R6",
+        "CELL_END": "R157"
+      }
+    }
+  },
+  "SAFEGUARDING_LOADING_CONFIG": {
+    "NEW_REQUESTS": {
+      "SHEET_NAME": "Table 1",
+      "CELL_REF": "E4"
+    },
+    "OUTCOMES": {
+      "SHEET_NAME": "Table 8",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "D4",
+        "CELL_END": "M5"
+      }
+    },
+    "CONCERNS_BY_REGION": {
+      "SHEET_NAME": "Table 1",
+      "INDEX_WORKBOOK_RANGE": {
+        "CELL_START": "D10",
+        "CELL_END": "D18"
+      },
+      "COLUMN_WORKBOOK_RANGE": {
+        "CELL_START": "E3",
+        "CELL_END": "E3"
+      },
+      "DATA_WORKBOOK_RANGE": {
+        "CELL_START": "E10",
+        "CELL_END": "E18"
+      }
+    }
+  },
+  "DOLS_LOADING_CONFIG": {
+    "NEW_REQUESTS": {
+      "SHEET_NAME": "Key Measures",
+      "CELL_REF": "J6"
+    }
+  },
+  "OVERVIEW_LOADING_CONFIG": {
+    "NEW_REQUESTS": {
+      "SHEET_NAME": "Table 1",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "A8",
+        "CELL_END": "G20"
+      }
+    },
+    "SHORT_TERM_CARE": {
+      "SHEET_NAME": "Table 2",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "A4",
+        "CELL_END": "G21"
+      }
+    },
+    "LONG_TERM_CARE": {
+      "SHEET_NAME": "Table 3",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "A5",
+        "CELL_END": "G19"
+      }
+    },
+    "LA_EXPENDITURE": {
+      "SHEET_NAME": "Table 5",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "A4",
+        "CELL_END": "Q14"
+      }
+    },
+    "PROPORTION_LA_EXPENDITURE": {
+      "SHEET_NAME": "Table 5",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "K11",
+        "CELL_END": "Q14"
+      }
+    },
+    "WORKFORCE": {
+      "SHEET_NAME": "Table 6",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "A4",
+        "CELL_END": "G17"
+      }
+    },
+    "SOCIAL_CARE_EXPERIENCE": {
+      "SHEET_NAME": "Table 7",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "A6",
+        "CELL_END": "H19"
+      }
+    },
+    "SOCIAL_CARE_EXPERIENCE_CHOICE": {
+      "SHEET_NAME": "Table 7",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "C16",
+        "CELL_END": "H19"
+      }
+    },
+    "OUTCOMES": {
+      "SHEET_NAME": "Table 8",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "A5",
+        "CELL_END": "H17"
+      }
+    },
+    "MORE_OUTCOMES": {
+      "SHEET_NAME": "Table 9",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "A6",
+        "CELL_END": "H12"
+      }
+    },
+    "OUTCOMES_BY_LA": {
+      "SHEET_NAME": "Table 10a",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "A6",
+        "CELL_END": "F157"
+      }
+    }
+  },
+  "WORKFORCE_LOADING_CONFIG": {
+    "ALL_JOB_ROLES": {
+      "SHEET_NAME": "T7",
+      "WORKBOOK_RANGE": {
+        "CELL_START": "C22",
+        "CELL_END": "M24"
+      }
+    },
+    "NEW_STARTERS": {
+      "SHEET_NAME": "T6",
+      "CELL_REF": "G27"
+    },
+    "LEAVERS": {
+      "SHEET_NAME": "T6",
+      "CELL_REF": "H27"
+    }
+  }
+}
