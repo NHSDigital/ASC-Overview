@@ -71,7 +71,7 @@ https://digital.nhs.uk/data-and-information/publications/statistical/adult-socia
 # Authors
 Adam Carruthers, Amaan Ibn-Nasar, Raman Chahal
 
-Repo Owner Contact Details: raman.chahal1@nhs.net
+Repo Owner Contact Details: socialcare.statistics@nhs.net
 
 # Licence
 
